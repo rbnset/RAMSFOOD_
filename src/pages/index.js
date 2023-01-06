@@ -3,5 +3,17 @@ import SignIn from './SignIn';
 import SignUp from './SignUp';
 import SignUpAddress from './SignUpAddress';
 import SucessSignUp from './SuccessSignUp';
+import Home from './Home';
+import Order from './Order';
+import Profile from './Profile';
 
-export {SplashScreen, SignIn, SignUp, SignUpAddress, SucessSignUp};
+export {
+  SplashScreen,
+  SignIn,
+  SignUp,
+  SignUpAddress,
+  SucessSignUp,
+  Home,
+  Order,
+  Profile,
+};
