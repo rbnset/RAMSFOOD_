@@ -1,25 +1,18 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {FoodDummy1, IcStarOn, IcStarOff} from '../../../assets';
+import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
+import Rating from '../Rating';
 
-const FoodCard = ({image}) => {
+const FoodCard = ({image, name, rating, onPress}) => {
   return (
-    <View style={styles.container}>
-      <Image source={image} style={styles.image} />
-      <View style={styles.content}>
-        <Text style={styles.text}>Nasi Goreng</Text>
-        <View style={styles.ratingContainer}>
-          <View style={styles.starContainer}>
-            <IcStarOn />
-            <IcStarOn />
-            <IcStarOn />
-            <IcStarOn />
-            <IcStarOff />
-          </View>
-          <Text>4.5</Text>
+    <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
+      <View style={styles.container}>
+        <Image source={image} style={styles.image} />
+        <View style={styles.content}>
+          <Text style={styles.text}>{name}</Text>
+          <Rating />
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -41,10 +34,4 @@ const styles = StyleSheet.create({
   image: {width: 200, height: 140, resizeMode: 'cover'},
   content: {padding: 12},
   text: {fontSize: 16, fontFamily: 'Poppins-Regular', color: '#020202'},
-  ratingContainer: {
-    flexDirection: 'row',
-  },
-  starContainer: {
-    flexDirection: 'row',
-  },
 });
