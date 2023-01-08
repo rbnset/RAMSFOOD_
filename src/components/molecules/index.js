@@ -12,6 +12,7 @@ import OrderTabSection from './OrderTabSection';
 import Number from './Number';
 import ProfileTabSection from './ProfileTabSection';
 import ItemListMenu from './ItemListMenu';
+import Loading from './Loading';
 
 export {
   Header,
@@ -28,4 +29,5 @@ export {
   Number,
   ProfileTabSection,
   ItemListMenu,
+  Loading,
 };

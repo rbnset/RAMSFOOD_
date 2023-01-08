@@ -11,17 +11,13 @@ const SplashScreen = ({navigation}) => {
   return (
     <View
       style={{
-        backgroundColor: 'yellow',
+        backgroundColor: '#FF990D',
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
       }}>
       <Logo />
       <View style={{height: 28}} />
-      <Text
-        style={{fontSize: 18, color: 'black', fontFamily: 'Poppins-Medium'}}>
-        Ramsfood
-      </Text>
     </View>
   );
 };

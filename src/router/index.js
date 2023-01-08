@@ -1,5 +1,7 @@
-import React from 'react';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createStackNavigator} from '@react-navigation/stack';
+import React from 'react';
+import {BottomNavigator} from '../components';
 import {
   FoodDetail,
   Home,
@@ -14,8 +16,6 @@ import {
   SuccessOrder,
   SucessSignUp,
 } from '../pages';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {BottomNavigator} from '../components';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -40,8 +40,7 @@ const MainApp = () => {
 
 const Router = () => {
   return (
-    // initialRouteName="MainApp"
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName="MainApp">
       <Stack.Screen
         name="SplashScreen"
         component={SplashScreen}
