@@ -14,10 +14,10 @@ const Home = () => {
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
           <View style={styles.foodCardContainer}>
             <Gap width={24} />
-            <FoodCard image={FoodDummy1} />
-            <FoodCard image={FoodDummy2} />
-            <FoodCard image={FoodDummy3} />
-            <FoodCard image={FoodDummy4} />
+            <FoodCard image={FoodDummy1} name={'Nasi Goreng Kulit'} />
+            <FoodCard image={FoodDummy2} name={'Nasi Goreng Ayam'} />
+            <FoodCard image={FoodDummy3} name={'Lemon Tea'} />
+            <FoodCard image={FoodDummy4} name={'Ifumie'} />
           </View>
         </ScrollView>
       </View>

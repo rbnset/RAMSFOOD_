@@ -29,7 +29,7 @@ const ItemListFood = ({
           <>
             <View style={styles.content}>
               <Text style={styles.title}>{name}</Text>
-              <Text style={styles.price}>IDR. {price}</Text>
+              <Text style={styles.price}>Rp. {price},-</Text>
             </View>
             <Rating />
           </>
@@ -40,7 +40,7 @@ const ItemListFood = ({
           <>
             <View style={styles.content}>
               <Text style={styles.title}>{name}</Text>
-              <Text style={styles.price}>IDR. {price}</Text>
+              <Text style={styles.price}>Rp. {price},-</Text>
             </View>
             <Text style={styles.items}>{items} items</Text>
           </>

@@ -6,8 +6,8 @@ const HomeProfile = () => {
   return (
     <View style={styles.profileContainer}>
       <View>
-        <Text style={styles.appName}>FoodMarket</Text>
-        <Text style={styles.desc}>Let's get some foods</Text>
+        <Text style={styles.appName}>Ramsfood</Text>
+        <Text style={styles.desc}>Ayo temukan makanan favoritmu</Text>
       </View>
       <Image source={ProfileDummy} style={styles.profile} />
     </View>

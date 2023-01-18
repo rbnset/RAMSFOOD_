@@ -3,8 +3,7 @@ import React from 'react';
 import {ScrollView, StyleSheet, View} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {Button, Gap, Header, Select, TextInput} from '../../components';
-import useForm from '../../utils/useForm';
-import {showMessage, hideMessage} from 'react-native-flash-message';
+import {useForm, showMessage} from '../../utils/useForm';
 
 const SignUpAddress = ({navigation}) => {
   const [form, setForm] = useForm({
@@ -15,7 +14,7 @@ const SignUpAddress = ({navigation}) => {
   });
 
   const dispatch = useDispatch();
-  const registerReducer = useSelector(state => state.registerReducer);
+  const {registerReducer, photoReducer} = useSelector(state => state);
 
   const onSumbit = () => {
     console.log('form: ', form);
@@ -24,26 +23,43 @@ const SignUpAddress = ({navigation}) => {
       ...registerReducer,
     };
     console.log('data Register: ', data);
-    axios
+    dispatch({type: 'SET_LOADING', value: true});
+    axioss
       .post('https://ramsfood.sisfor2020.com/api/register', data)
+
       .then(res => {
         console.log('success', res.data);
+        if (photoReducer.isUploadPhoto) {
+          const photoForUpload = new FormData();
+          photoForUpload.append('file', photoReducer);
+
+          axios
+            .post(
+              'https://ramsfood.sisfor2020.com/api/user/photo',
+              photoForUpload,
+              {
+                headers: {
+                  Authorization: `${res.data.data.token_type} ${res.data.data.access_token}`,
+                  'Content-Type': 'multipart/from-data',
+                },
+              },
+            )
+            .then(resUpload => {
+              console.log('Success upload: ', resUpload);
+            })
+            .catch(err => {
+              showMessage('Upload photo tidak berhasil');
+            });
+        }
+
         dispatch({type: 'SET_LOADING', value: false});
         showMessage('Register Success', 'success');
         navigation.replace('SuccessSignUp');
       })
       .catch(err => {
         dispatch({type: 'SET_LOADING', value: false});
-        showToast(err?.response?.data?.message, 'Error SignUp');
+        showMessage(err?.response?.data?.message);
       });
-  };
-
-  const showToast = (message, type) => {
-    showMessage({
-      message,
-      type: type === 'success' ? 'success' : 'danger',
-      backgroundColor: type === 'success' ? '#1abc9c' : '#d9435e',
-    });
   };
 
   return (

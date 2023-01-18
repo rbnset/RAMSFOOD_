@@ -7,25 +7,30 @@ const OrderSummary = ({navigation}) => {
   return (
     <ScrollView>
       <Header
-        title={'Order Summary'}
-        subtitle={'You deserve better meal'}
+        title={'Pembayaran'}
+        subTitle={'Pastikan lagi pesananmu'}
         onBack={() => navigation.goBack()}
       />
       <View style={styles.content}>
         <Text style={styles.label}>Item Ordered</Text>
-        <ItemListFood image={FoodDummy1} items={14} type="order-summary" />
+        <ItemListFood
+          image={FoodDummy1}
+          items={14}
+          type="order-summary"
+          price={18000}
+        />
         <Text style={styles.label}>Details Transaction</Text>
-        <ItemValue label={'Nasgor'} value={'IDR 20.000'} />
+        <ItemValue label={'Nasgor'} value={'Rp. 252.000,-'} />
         <ItemValue
           label={'Total Price'}
-          value={'IDR 20.000'}
+          value={'Rp. 252.000,-'}
           valueColor="#1ABC9C"
         />
       </View>
 
       <View style={styles.content}>
         <Text style={styles.label}>Deliver to:</Text>
-        <ItemValue label={'Name'} value={'Robin'} />
+        <ItemValue label={'Name'} value={'Robin Setiyawan'} />
         <ItemValue label={'Phone No.'} value={'0858 6987 7959'} />
         <ItemValue label={'Address'} value={'Wisma Garuda'} />
         <ItemValue label={'House No,'} value={'7'} />

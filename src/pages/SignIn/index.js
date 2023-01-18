@@ -20,6 +20,7 @@ const SignIn = ({navigation}) => {
       .post('https://ramsfood.sisfor2020.com/api/login', form)
       .then(res => {
         console.log('success', res);
+        navigation.navigate('MainApp');
       })
       .catch(err => {
         console.log('error', err);

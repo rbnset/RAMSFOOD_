@@ -17,6 +17,8 @@ const SuccessOrder = ({navigation}) => {
         <Button
           text="Order Other Foods"
           onPress={() => navigation.replace('MainApp')}
+          color="#E2F7FE"
+          textColor="black"
         />
       </View>
       <Gap height={12} />
@@ -39,10 +41,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'white',
+    backgroundColor: '#FF990D',
   },
   title: {fontSize: 20, fontFamily: 'Poppins-Regular', color: '#020202'},
-  subTitle: {fontSize: 14, fontFamily: 'Poppins-Light', color: '#8D92A3'},
+  subTitle: {fontSize: 14, fontFamily: 'Poppins-Light', color: '#E2F7FE'},
   buttonContainer: {
     width: '100%',
     paddingHorizontal: 80,

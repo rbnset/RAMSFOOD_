@@ -9,7 +9,7 @@ const Counter = () => {
       <TouchableOpacity>
         <IcMin />
       </TouchableOpacity>
-      <Text style={styles.value}>4</Text>
+      <Text style={styles.value}>14</Text>
       <TouchableOpacity>
         <IcPlus />
       </TouchableOpacity>

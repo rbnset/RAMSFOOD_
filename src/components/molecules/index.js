@@ -1,18 +1,18 @@
-import Header from './Header';
 import BottomNavigator from './BottomNavigator';
-import FoodCard from './FoodCard';
-import HomeTabSection from './HomeTabSection';
-import HomeProfile from './HomeProfile';
-import Rating from './Rating';
-import ItemListFood from './ItemListFood';
 import Counter from './Counter';
-import ItemValue from './ItemValue';
 import EmptyOrder from './EmptyOrder';
-import OrderTabSection from './OrderTabSection';
-import Number from './Number';
-import ProfileTabSection from './ProfileTabSection';
+import FoodCard from './FoodCard';
+import Header from './Header';
+import HomeProfile from './HomeProfile';
+import HomeTabSection from './HomeTabSection';
+import ItemListFood from './ItemListFood';
 import ItemListMenu from './ItemListMenu';
+import ItemValue from './ItemValue';
 import Loading from './Loading';
+import Number from './Number';
+import OrderTabSection from './OrderTabSection';
+import ProfileTabSection from './ProfileTabSection';
+import Rating from './Rating';
 
 export {
   Header,

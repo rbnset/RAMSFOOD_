@@ -22,19 +22,18 @@ const FoodDetail = ({navigation}) => {
             <Counter />
           </View>
           <Text style={styles.desc}>
-            Descriptionnnnn lorem Culpa sunt aute incididunt commodo irure ut
-            ex. Velit dolore reprehenderit enim in proident ut dolor do quis non
-            ad nisi. Mollit nulla commodo eiusmod exercitation fugiat proident
-            nostrud laboris. Esse proident eu anim Lorem. Fugiat occaecat
-            ullamco consectetur qui.
+            Nasi goreng adalah makanan yang berasal dari negeri China dan
+            mendapat banyak modifikasi di Indonesia.
           </Text>
           <Text style={styles.label}>Bahan: </Text>
-          <Text style={styles.desc}>Des Bahan</Text>
+          <Text style={styles.desc}>
+            Nasi, Telur, Kulit, Daun Bawang, Wortel, Acar
+          </Text>
         </View>
         <View style={styles.footer}>
           <View style={styles.priceContainer}>
             <Text style={styles.labelTotal}>Total Peice</Text>
-            <Text style={styles.priceTotal}>IDR. 20.0000</Text>
+            <Text style={styles.priceTotal}>Rp. 252.000,-</Text>
           </View>
           <View style={styles.button}>
             <Button

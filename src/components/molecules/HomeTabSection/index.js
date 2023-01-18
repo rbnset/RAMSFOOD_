@@ -54,22 +54,34 @@ const NewTaste = () => {
         <ItemListFood
           image={FoodDummy2}
           onPress={() => navigation.navigate('FoodDetail')}
+          type={'product'}
           rating={4}
+          name={'Nasgor Ayam'}
+          price={'18.000'}
         />
         <ItemListFood
           image={FoodDummy3}
           onPress={() => navigation.navigate('FoodDetail')}
+          type={'product'}
           rating={4}
+          name={'Elmon Tea'}
+          price={'4.000'}
         />
         <ItemListFood
           image={FoodDummy4}
           onPress={() => navigation.navigate('FoodDetail')}
+          type={'product'}
           rating={4}
+          name={'Ifumie'}
+          price={'21.000'}
         />
         <ItemListFood
           image={FoodDummy1}
           onPress={() => navigation.navigate('FoodDetail')}
+          type={'product'}
           rating={4}
+          name={'Mie Goreng'}
+          price={'16.000'}
         />
       </View>
     </ScrollView>
@@ -92,22 +104,34 @@ const Popular = () => {
         <ItemListFood
           image={FoodDummy2}
           onPress={() => navigation.navigate('FoodDetail')}
+          type={'product'}
           rating={4}
+          name={'Nasgor Ayam'}
+          price={'18.000'}
         />
         <ItemListFood
           image={FoodDummy3}
           onPress={() => navigation.navigate('FoodDetail')}
+          type={'product'}
           rating={4}
+          name={'Elmon Tea'}
+          price={'4.000'}
         />
         <ItemListFood
           image={FoodDummy4}
           onPress={() => navigation.navigate('FoodDetail')}
+          type={'product'}
           rating={4}
+          name={'Ifumie'}
+          price={'21.000'}
         />
         <ItemListFood
           image={FoodDummy1}
           onPress={() => navigation.navigate('FoodDetail')}
+          type={'product'}
           rating={4}
+          name={'Mie Goreng'}
+          price={'16.000'}
         />
       </View>
     </ScrollView>
@@ -130,22 +154,34 @@ const Recommended = () => {
         <ItemListFood
           image={FoodDummy2}
           onPress={() => navigation.navigate('FoodDetail')}
+          type={'product'}
           rating={4}
+          name={'Nasgor Ayam'}
+          price={'18.000'}
         />
         <ItemListFood
           image={FoodDummy3}
           onPress={() => navigation.navigate('FoodDetail')}
+          type={'product'}
           rating={4}
+          name={'Elmon Tea'}
+          price={'4.000'}
         />
         <ItemListFood
           image={FoodDummy4}
           onPress={() => navigation.navigate('FoodDetail')}
+          type={'product'}
           rating={4}
+          name={'Ifumie'}
+          price={'21.000'}
         />
         <ItemListFood
           image={FoodDummy1}
           onPress={() => navigation.navigate('FoodDetail')}
+          type={'product'}
           rating={4}
+          name={'Mie Goreng'}
+          price={'16.000'}
         />
       </View>
     </ScrollView>
